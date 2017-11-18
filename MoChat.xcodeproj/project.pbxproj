@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41CE3048BC878FD3E0238B40 /* Pods_MoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85510BEA6E08300EDAA9B517 /* Pods_MoChat.framework */; };
+		D1080F411FAF9E4B00BF1A15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1080F401FAF9E4A00BF1A15 /* GoogleService-Info.plist */; };
 		D1DBC2B81F96CD5F00E0A79B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC2B71F96CD5F00E0A79B /* AppDelegate.swift */; };
-		D1DBC2BA1F96CD5F00E0A79B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC2B91F96CD5F00E0A79B /* ViewController.swift */; };
+		D1DBC2BA1F96CD5F00E0A79B /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC2B91F96CD5F00E0A79B /* MessagesController.swift */; };
 		D1DBC2BD1F96CD5F00E0A79B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DBC2BB1F96CD5F00E0A79B /* Main.storyboard */; };
 		D1DBC2BF1F96CD5F00E0A79B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DBC2BE1F96CD5F00E0A79B /* Assets.xcassets */; };
 		D1DBC2C21F96CD5F00E0A79B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DBC2C01F96CD5F00E0A79B /* LaunchScreen.storyboard */; };
+		D1DBC2CB1F96D00A00E0A79B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC2CA1F96D00A00E0A79B /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22CE4168B6718BC322567235 /* Pods-MoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoChat/Pods-MoChat.debug.xcconfig"; sourceTree = "<group>"; };
+		4B8932743419EB046060F94F /* Pods-MoChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoChat/Pods-MoChat.release.xcconfig"; sourceTree = "<group>"; };
+		85510BEA6E08300EDAA9B517 /* Pods_MoChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1080F401FAF9E4A00BF1A15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D1DBC2B41F96CD5F00E0A79B /* MoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DBC2B71F96CD5F00E0A79B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D1DBC2B91F96CD5F00E0A79B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1DBC2B91F96CD5F00E0A79B /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
 		D1DBC2BC1F96CD5F00E0A79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1DBC2BE1F96CD5F00E0A79B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1DBC2C11F96CD5F00E0A79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1DBC2C31F96CD5F00E0A79B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1DBC2CA1F96D00A00E0A79B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41CE3048BC878FD3E0238B40 /* Pods_MoChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		208FB3226A0A08A07B0D4BBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85510BEA6E08300EDAA9B517 /* Pods_MoChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9ECB317E80D184E1491CA0EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22CE4168B6718BC322567235 /* Pods-MoChat.debug.xcconfig */,
+				4B8932743419EB046060F94F /* Pods-MoChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D1DBC2AB1F96CD5F00E0A79B = {
 			isa = PBXGroup;
 			children = (
 				D1DBC2B61F96CD5F00E0A79B /* MoChat */,
 				D1DBC2B51F96CD5F00E0A79B /* Products */,
+				9ECB317E80D184E1491CA0EE /* Pods */,
+				208FB3226A0A08A07B0D4BBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +83,23 @@
 			isa = PBXGroup;
 			children = (
 				D1DBC2B71F96CD5F00E0A79B /* AppDelegate.swift */,
-				D1DBC2B91F96CD5F00E0A79B /* ViewController.swift */,
+				D1DBC2B91F96CD5F00E0A79B /* MessagesController.swift */,
+				D1DBC2CA1F96D00A00E0A79B /* LoginController.swift */,
+				D1DBC2C91F96CFE000E0A79B /* New Group */,
 				D1DBC2BB1F96CD5F00E0A79B /* Main.storyboard */,
 				D1DBC2BE1F96CD5F00E0A79B /* Assets.xcassets */,
 				D1DBC2C01F96CD5F00E0A79B /* LaunchScreen.storyboard */,
 				D1DBC2C31F96CD5F00E0A79B /* Info.plist */,
+				D1080F401FAF9E4A00BF1A15 /* GoogleService-Info.plist */,
 			);
 			path = MoChat;
+			sourceTree = "<group>";
+		};
+		D1DBC2C91F96CFE000E0A79B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1DBC2C61F96CD5F00E0A79B /* Build configuration list for PBXNativeTarget "MoChat" */;
 			buildPhases = (
+				9749B717B87CEC90F3835FB7 /* [CP] Check Pods Manifest.lock */,
 				D1DBC2B01F96CD5F00E0A79B /* Sources */,
 				D1DBC2B11F96CD5F00E0A79B /* Frameworks */,
 				D1DBC2B21F96CD5F00E0A79B /* Resources */,
+				3E37FD70119BF47015359296 /* [CP] Embed Pods Frameworks */,
+				EF9872E661AEEDA82BE8E4DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,18 +166,68 @@
 			files = (
 				D1DBC2C21F96CD5F00E0A79B /* LaunchScreen.storyboard in Resources */,
 				D1DBC2BF1F96CD5F00E0A79B /* Assets.xcassets in Resources */,
+				D1080F411FAF9E4B00BF1A15 /* GoogleService-Info.plist in Resources */,
 				D1DBC2BD1F96CD5F00E0A79B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E37FD70119BF47015359296 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoChat/Pods-MoChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9749B717B87CEC90F3835FB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF9872E661AEEDA82BE8E4DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoChat/Pods-MoChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D1DBC2B01F96CD5F00E0A79B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1DBC2BA1F96CD5F00E0A79B /* ViewController.swift in Sources */,
+				D1DBC2BA1F96CD5F00E0A79B /* MessagesController.swift in Sources */,
+				D1DBC2CB1F96D00A00E0A79B /* LoginController.swift in Sources */,
 				D1DBC2B81F96CD5F00E0A79B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +363,7 @@
 		};
 		D1DBC2C71F96CD5F00E0A79B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22CE4168B6718BC322567235 /* Pods-MoChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +379,7 @@
 		};
 		D1DBC2C81F96CD5F00E0A79B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B8932743419EB046060F94F /* Pods-MoChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

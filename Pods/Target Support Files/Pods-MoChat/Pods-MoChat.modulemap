@@ -1,0 +1,6 @@
+framework module Pods_MoChat {
+  umbrella header "Pods-MoChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

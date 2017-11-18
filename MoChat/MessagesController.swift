@@ -9,21 +9,34 @@
 import UIKit
 import Firebase
 
-class ViewController: UITableViewController {
+class MessagesController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Log out", style: .plain, target: self, action: #selector(handleLogin))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Log out", style: .plain, target: self, action: #selector(handleLogout))
         
+        checkIfUserIsLoggedIn()
+    }
+    
+    func checkIfUserIsLoggedIn() {
+       
         // user is not logged in
         if Auth.auth().currentUser?.uid == nil {
-            perform(#selector(handleLogin), with: nil, afterDelay: 0)
+            perform(#selector(handleLogout), with: nil, afterDelay: 0)
         }
+        else {
+            let uid = Auth.auth().currentUser?.uid
+            Database.database().reference().child("users").child(uid!).observe(.value, with: { (snapshot) in
+                print(snapshot)
+            }, withCancel: nil)
+        }
+        
     }
     
     
-    @objc func handleLogin() {
+    
+    @objc func handleLogout() {
         do {
             try Auth.auth().signOut()
         } catch let logoutError {
